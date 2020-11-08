@@ -9,7 +9,7 @@ LABEL de.microtema.release-date="2020-11-08"
 
 WORKDIR app
 
-COPY app/pom.xml .
+COPY app .
 COPY bootstrap/settings.xml .
 
-ENTRYPOINT ["mvn", "flyway:migrate", "-Pdev -Doracle.jdbc.fanEnabled=false", "-s", "settings.xml"]
+ENTRYPOINT ["mvn", "org.flywaydb:flyway-maven-plugin:6.3.2:migrate", "-P flyway", "-s", "settings.xml", "-Pflyway -Doracle.jdbc.fanEnabled=false"]

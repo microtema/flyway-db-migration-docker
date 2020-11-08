@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.microtema</groupId>
-    <artifactId>db-migration</artifactId>
+    <artifactId>flyway-db-migration</artifactId>
     <version>2.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>DB Migration</name>
-    <url>https://mtema@bitbucket.org/javautil/utils.git</url>
+    <name>Flyway DB Migration</name>
+    <url>https://github.com/microtema/flyway-db-migration-docker.git</url>
 
     <properties>
     </properties>
@@ -29,7 +29,7 @@
 
     <profiles>
         <profile>
-            <id>dev</id>
+            <id>flyway</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -50,14 +50,6 @@
         </profile>
     </profiles>
 
-    <distributionManagement>
-        <repository>
-            <id>io.cloudrepo</id> <!-- Must Match the Unique Identifier in settings.xml -->
-            <name>Cloud Repo Repository</name>
-            <url>https://mtema.mycloudrepo.io/repositories/mtema</url>
-        </repository>
-    </distributionManagement>
-
     <licenses>
         <license>
             <name>The MIT License (MIT)</name>
@@ -72,9 +64,9 @@
     </organization>
 
     <scm>
-        <url>https://mtema@bitbucket.org/javautil/utils.git</url>
-        <connection>scm:git:git@bitbucket.org:javautil/utils.git</connection>
-        <developerConnection>scm:git:git@bitbucket.org:javautil/utils.git</developerConnection>
+        <url>https://github.com/microtema/flyway-db-migration-docker.git</url>
+        <connection>scm:git:git@github.com:microtema/flyway-db-migration-docker.git</connection>
+        <developerConnection>scm:git:git@github.com:microtema/flyway-db-migration-docker.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
