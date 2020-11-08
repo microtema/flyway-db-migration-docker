@@ -5,4 +5,4 @@ docker build . -t microtema/flyway-db-migration
 
 # run docker
 
-docker run --name fyway-db-migration microtema/flyway-db-migration
+docker run --name flyway-db-migration microtema/flyway-db-migration
